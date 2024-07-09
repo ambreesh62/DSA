@@ -9,7 +9,7 @@
 
 
 class Solution:
-    def removeElement(self, nums, val):
+    def remove_element(self, nums, val):
         k = 0
         for i in range(len(nums)):
             if nums[i] != val:
@@ -22,7 +22,7 @@ class Solution:
 solution = Solution()
 nums = [3, 2, 2, 3]
 val = 3
-result = solution.removeElement(nums, val)
+result = solution.remove_element(nums, val)
 
 print(
     "Number of elements not equal to", val, ":", result

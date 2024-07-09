@@ -3,7 +3,7 @@
 
 
 class Solution:
-    def strStr(self, haystack: str, needle: str) -> int:
+    def Find_first_occurrence(self, haystack: str, needle: str) -> int:
         # Edge case: if needle is an empty string, return 0
         if needle == "":
             return 0
@@ -25,12 +25,12 @@ class Solution:
 def main():
     param_1 = "hello"
     param_2 = "ll"
-    ret = Solution().strStr(param_1, param_2)
+    ret = Solution().Find_first_occurrence(param_1, param_2)
     print(ret)  # Output should be 2
 
     param_1 = "aaaaa"
     param_2 = "bba"
-    ret = Solution().strStr(param_1, param_2)
+    ret = Solution().Find_first_occurrence(param_1, param_2)
     print(ret)  # Output should be -1
 
 
