@@ -17,6 +17,6 @@ class Solution:
                 l = mid + 1
         return l
 
-
+# Example Usage
 obj = Solution()
-print(obj.search_insert([1, 3, 5, 7], target=6))
+print(obj.search_insert([1, 3, 5, 7], target=6))  # Output 3
