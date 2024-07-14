@@ -7,20 +7,20 @@
 
 class Solution:
     def climb_stairs(self, n: int) -> int:
-        d = {}
+        dict = {}
 
-        def fun(n):
-            if d.get(n, -1) != -1:
-                return d[n]
+        def climb(n):
+            if dict.get(n, -1) != -1:
+                return dict[n]
             if n < 2:
                 return 1
             else:
-                s = fun(n - 1) + fun(n - 2)
-                d[n] = s
-                return s
+                result = climb(n - 1) + climb(n - 2)
+                dict[n] = result
+                return result
 
-        return fun(n)
+        return climb(n)
 
 
 x = Solution()
-print(x.climb_stairs(2))
+print(x.climb_stairs(2))  # Output: 2
