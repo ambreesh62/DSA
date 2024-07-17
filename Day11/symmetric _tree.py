@@ -25,6 +25,6 @@ class Solution:
             return (
                 (left.val == right.val)
                 and is_mirror(left.right, right.left)
-                and (left.left, right.right)
+                and is_mirror(left.left, right.right)
             )
         return is_mirror(root.left, root.right) if root else True
